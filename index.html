@@ -1,35 +1,69 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
+    <title>Bootstrap Example</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <script src=""></script>
-    <section id="app">
-        <h1>Apps</h1>
-        <div class="line"></div>
-        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/LT6vx30EguFA_xqzJBVUyyQiNw4PquFj088SUF6VTaE/embed"></iframe>
-        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/bsmPCs5OGryhdOQFKxljnK_NRie1y-KeGaKbz_qxBIo/embed"></iframe>
-    </section>
-    <section id="game">
-        <h1>Games</h1>
-        <div class="line"></div>
-        <a href="https://studio.code.org/projects/spritelab/Df1zODv_kU-cvFUHqSHMoEwu20rpH5Y4vmGJ7wDBeek" target="_blank"><img src="ballon%20game.png"></a>
-        <a href="https://studio.code.org/projects/spritelab/wlYH34VBjJ9YmixbHT743yC9sO9l2BRlHx-7CSJYSro" target="_blank"><img src="Tokyo%20S.O.S"></a>
-    </section>
-    <section id="Chatbot">
-        <h1>Chatbot</h1>
-        <div class="line"></div>
-        <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/03cc5ee9-4664-4716-8353-823d05eb7fdd">
-        </iframe>
-    </section>
 
+    <div class="container">
 
-</body>
+        <section id="app">
+            <h1>Apps</h1>
+            <div class="line"></div>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/AmAIOlod-80aGvVFcBdbfjebPGUlVaYjI8ECZcJtZks/embed"></iframe>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/U9AQsuLnTixFr5caYUBM9qmkuaPCvmuWblFMcUPrC14/embed"></iframe>
+        </section>
 
-</html>
+        <!--
+Start your code from here
+-->
+        <h2>Click on the games to explore</h2>
+        <h5>these games are built in gamelab,Click on the game to play</h5>
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center>
+                        <a href="https://studio.code.org/projects/spritelab/Df1zODv_kU-cvFUHqSHMoEwu20rpH5Y4vmGJ7wDBeek" target="_blank"><img src="ballon%20game.png"></a>
+                        <div class="carousel-content">
+                            <p>ballon-game</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <a href="https://studio.code.org/projects/spritelab/xjQOcivTYOR1OPGkfv467Q8v3JEdZA5AllnmKuA4Axk" target="_blank"><img src="tokyo.png"></a>
+                        <div class="carousel-content">
+                            <p>Tokyo S.O.S</p>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <!-- Left and right controls --> <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span> </a>
+        </div>
+        <h2>click on the playstore apps to explore</h2>
+        <div id="myCarouse2" class="carousel slide">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center> <a href="https://console.dialogflow.com/api-client/demo/embedded/03cc5ee9-4664-4716-8353-823d05eb7fdd" target="_blank"> <img src="chatbotsareamazing.png" class="img-responsive"> </a>
+                        <div class="carousel-content">
+                            <p>Chat blot</p>
+                        </div>
+                    </center>
+                </div>
+                <a class="left carousel-control" href="#myCarouse2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#myCarouse2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+            </div>
+        </div>
+    </div>
+</body></html>
